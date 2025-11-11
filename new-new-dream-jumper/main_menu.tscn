@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dydduoijl87lb"]
+[gd_scene load_steps=5 format=3 uid="uid://dydduoijl87lb"]
 
 [ext_resource type="Texture2D" uid="uid://b3ufh06avowu0" path="res://images/pixil-frame-0 (1).png" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://boqdbi01eaam7" path="res://main_menu.gd" id="1_glbon"]
-[ext_resource type="Texture2D" uid="uid://b7nij6nbvfn6r" path="res://images/main-bg-frame.png" id="1_jix8l"]
-[ext_resource type="Texture2D" uid="uid://cum1kw8ylf5mc" path="res://images/tut-frame.png" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://cip6057d8bf4s" path="res://images/newmainmenu..png" id="2_jix8l"]
 [ext_resource type="Texture2D" uid="uid://fj7b8c6ic5ci" path="res://images/quit-frame.png" id="4_nlkkf"]
 
 [node name="MainMenu" type="Control"]
@@ -26,19 +25,19 @@ offset_bottom = 40.0
 
 [node name="Main-bg-frame" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(173.233, 134.241)
+position = Vector2(172.7767, 130.82156)
 scale = Vector2(3.489, 2.86381)
-texture = ExtResource("1_jix8l")
+texture = ExtResource("2_jix8l")
 
 [node name="Play" type="TextureButton" parent="."]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
-offset_left = -2.0
-offset_top = -17.0
-offset_right = 103.0
-offset_bottom = 97.0
+offset_left = 7.9087925
+offset_top = 133.0771
+offset_right = 112.90879
+offset_bottom = 247.07709
 grow_vertical = 2
 scale = Vector2(1.00349, 1.31628)
 size_flags_horizontal = 0
@@ -46,31 +45,15 @@ size_flags_vertical = 3
 texture_normal = ExtResource("1_06t4h")
 stretch_mode = 0
 
-[node name="Instructions" type="TextureButton" parent="."]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 9
-anchor_bottom = 1.0
-offset_left = -1.82511
-offset_top = 74.8839
-offset_right = 98.1749
-offset_bottom = 174.884
-grow_vertical = 2
-scale = Vector2(0.980057, 1.46533)
-size_flags_horizontal = 0
-size_flags_vertical = 3
-texture_normal = ExtResource("3_glbon")
-stretch_mode = 0
-
 [node name="Exit" type="TextureButton" parent="."]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
-offset_left = -4.86695
-offset_top = 169.617
-offset_right = 95.133
-offset_bottom = 269.617
+offset_left = 205.32443
+offset_top = 144.80594
+offset_right = 305.32443
+offset_bottom = 244.80594
 grow_vertical = 2
 scale = Vector2(0.961786, 1.40205)
 size_flags_horizontal = 0
@@ -79,5 +62,4 @@ texture_normal = ExtResource("4_nlkkf")
 stretch_mode = 0
 
 [connection signal="pressed" from="Play" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Instructions" to="." method="_on_instructions_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
