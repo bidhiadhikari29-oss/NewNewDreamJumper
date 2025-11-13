@@ -18,6 +18,6 @@ func _on_start_pressed() -> void:
 func _on_instructions_pressed() -> void:
 	pass # Replace with function body.
 
-
 func _on_Exit_pressed() -> void:
-	get_tree().quit
+	get_tree().quit()
+	
