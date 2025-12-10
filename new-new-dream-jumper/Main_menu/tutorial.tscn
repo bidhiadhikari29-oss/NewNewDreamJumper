@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3a6f6j1lkb87"]
+
+[ext_resource type="Script" uid="uid://dqhryed6pxb24" path="res://Scripts/tutorial.gd" id="1_laq72"]
+[ext_resource type="Texture2D" uid="uid://ds4khopxgi7ga" path="res://art/menus/pixil-frame-with-bg (7).png" id="2_qeb8b"]
+[ext_resource type="Texture2D" uid="uid://h5hgl7cque7j" path="res://art/buttons/quit-frame-1.png.png" id="3_7el64"]
+
+[node name="Tutorial" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_laq72")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = 2.0
+offset_right = 1150.0
+offset_bottom = 653.0
+texture = ExtResource("2_qeb8b")
+
+[node name="next" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 797.0
+offset_top = 430.0
+offset_right = 905.801
+offset_bottom = 530.0
+scale = Vector2(3.02496, 3.09061)
+texture_normal = ExtResource("3_7el64")
+stretch_mode = 0
+
+[connection signal="pressed" from="next" to="." method="_on_next_pressed"]

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg6pb43i8clpe"]
+
+[ext_resource type="Texture2D" uid="uid://bxjr6oceu4omj" path="res://art/pink_floor.png" id="1_mc8rk"]
+[ext_resource type="PackedScene" uid="uid://bpaxt0h616hj3" path="res://Player/player.tscn" id="2_t8i5u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_umqq0"]
+size = Vector2(20, 20.8569)
+
+[node name="World" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(583.5, 536.19)
+scale = Vector2(70.686, -11.0457)
+shape = SubResource("RectangleShape2D_umqq0")
+
+[node name="PinkFloor" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(572, 272)
+scale = Vector2(11.9655, 7.63636)
+texture = ExtResource("1_mc8rk")
+
+[node name="Player" parent="." instance=ExtResource("2_t8i5u")]
+position = Vector2(508, 271)
+scale = Vector2(0.805923, 1.11234)

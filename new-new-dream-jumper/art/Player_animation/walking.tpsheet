@@ -1,0 +1,93 @@
+{
+	"textures": [
+		{
+			"image": "walking.png",
+			"size": {
+				"w": 500,
+				"h": 100
+			},
+			"sprites": [
+				{
+					"filename": "Untitled_Artwork-1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 100
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled_Artwork-2.png",
+					"region": {
+						"x": 100,
+						"y": 0,
+						"w": 100,
+						"h": 100
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled_Artwork-3.png",
+					"region": {
+						"x": 200,
+						"y": 0,
+						"w": 100,
+						"h": 100
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled_Artwork-4.png",
+					"region": {
+						"x": 300,
+						"y": 0,
+						"w": 100,
+						"h": 100
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Untitled_Artwork-5.png",
+					"region": {
+						"x": 400,
+						"y": 0,
+						"w": 100,
+						"h": 100
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:0d9ca65c3ef572f825911535a529ff1a:4059f3315fcda67f1abf48d111833dc5:26f84c1266859fed94f74deb9843629f$"
+	}
+}
